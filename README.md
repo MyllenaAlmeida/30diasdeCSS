@@ -1,7 +1,7 @@
-# 30diasdeCSS
+# 30diasdeCSS 
 
 ## Sobre o desafio
-Esse desafio foi inspirado no da [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS), com apenas HTML5 E CSS3, ele tem o intuito de estimular e reforçar o aprendizado em CSS. Afinal, aprender nunca é demais, né?
+Esse desafio foi inspirado no da [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS), com apenas HTML5 E CSS3, ele tem o intuito de estimular e reforçar o aprendizado em CSS. Afinal, aprender nunca é demais, né? 🚀
 
 
 
