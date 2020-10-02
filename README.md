@@ -8,4 +8,4 @@ Esse desafio foi inspirado no da [Milena Carecho](https://github.com/MilenaCarec
 
 ## Detalhes do desafio
 * Estou iniciando ele em 02/10/2020;
-* Postarei o resultados todos os dias no [meu linkedin](https://www.linkedin.com/in/myllena-almeida/)
+* Postarei o resultados todos os dias no [meu linkedin](https://www.linkedin.com/in/myllena-almeida/);
