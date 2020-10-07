@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ghost{
+    width: 140px;
+    height: 160px;
+    background-color: blanchedalmond;
+    border-radius: 70px 70px 0 0;
+    position: relative;
+    cursor: pointer;
+    animation: floating 2s infinite ease-in-out;
+
+}
+
+@keyframes floating{
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.face{
+    width: 100px;
+    position: absolute;
+    top:60px;
+    left: calc(50% -50px);
+}
+
+.eyes{
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.eyes span{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+    transition: .3s linear;
+}
+
+.ghost:hover .eyes span{
+    height: 16px;
+}
+
+.mouth{
+    width: 40px;
+    height: 20px;
+    background-color: grey;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    transition: .3s linear;
+}
+
+.ghost:hover .mouth{
+    height: 12px;
+}
+
+.hands{
+    width: 180px;
+    position: absolute;
+    left: -20px;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hands span{
+    width: 20px;
+    height: 30px;
+    background-color:blanchedalmond ;
+
+}
+
+.hands span:first-child{
+    border-radius:20px 0 0 20px;
+}
+
+
+.hands span:last-child{
+    border-radius: 0 20px 20px 0;
+}
+
+.feet{
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    display: flex;
+}
+
+.feet span{
+    flex: 1;
+    height: 20px;
+    background-color:blanchedalmond ;
+    border-radius: 0 0 20px 20px;
+}
+
+.feet span:first-child{
+    border-radius: 0 0 20px 12px;
+}
+
+.feet span:last-child{
+    border-radius: 0 0 12px 20px;
+}
+
+.shadow{
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    background: white;
+    left: 35%;
+    top: 80%;
+    border-radius: 50%;
+    animation: scale 2s infinite;
+}
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes float {
+    50% {
+       transform: translateY(15px);
+    }
+  }
