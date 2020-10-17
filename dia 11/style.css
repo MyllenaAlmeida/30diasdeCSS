@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+.container{
+    width: 120px;
+    height: 120px;
+    margin: 200px auto;
+    position: relative;
+    padding: 40px;
+}
+
+.sun{
+    width: 120px;
+    height: 120px;
+    background: url(sun.png) no-repeat;
+    background-size: cover;
+    border-radius:50%;
+}
+
+.earth{
+    width: 40px;
+    height: 40px;
+    background: url(earth.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 20px 20px 10px 2px #000000cc;
+    animation: rol 4s infinite;
+
+}
+.mars{
+    width: 30px;
+    height: 30px;
+    background: url(mars.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 20px 20px 10px 2px #000000cc;
+    animation: rol2 6s infinite;
+
+}
+
+
+@keyframes rol {
+    50%{ 
+        left: calc(100% - 40px);
+        top: calc(100% - 40px);
+    }
+    100%{
+        z-index: -1;
+    }
+
+}
+
+@keyframes rol2 {
+    50%{ 
+        left: calc(100% - 30px);
+        top: calc(100% - 30px);
+    }
+    100%{
+        z-index: -1;
+    }
+
+}
