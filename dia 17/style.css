@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffde2a;
+}
+.player{
+    background-color: #840931;
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 10px solid #000000;
+    border-bottom: none;
+    border-radius: 60px 80px 0 0;
+    z-index: 1;
+}
+.player:after{
+    content: "";
+    position: absolute;
+    width: 92%;
+    height: 85%;
+    background-color: #ea1616;
+    top: 2.5px;
+    left: 6px;
+    border-radius: 58% 70% 28% 42% / 28% 56% 88% 89%;
+}
+.legs{
+    height: 50px;
+    width: 60px;
+    background-color: #840931;
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+    border: 10px solid #000000;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+    z-index: 1;
+}
+.legs:before{
+    content: "";
+    height: 45px;
+    width: 60px;
+    background-color: #840931;
+    position: absolute;
+    right: -90px;
+    border: 10px solid #000000;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+}
+.legs:after{
+    content: "";
+    height: 10px;
+    width: 55px;
+    background-color: #000000;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-radius: 0 0 10px 0;
+}
+.back{
+    height: 120px;
+    width: 35px;
+    background-color: #ea1616;
+    border: 10px solid black;
+    position: absolute;
+    left: -45px;
+    top: 65px;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+}
+.back:before{
+    content: "";
+    position: absolute;
+    height: 78px;
+    width: 26px;
+    background-color: #840931;
+    bottom: -0.5px;
+    left: -1px;
+    border-radius: 12px 0 0 8px;
+}
+.glass{
+    height: 75px;
+    width: 110px;
+    background-color: #225381;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    border-radius: 25px 50px 30px 30px;
+    border: 10px solid black;
+}
+.glass:before{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 65%;
+    background-color: #71d4ec;
+    border-radius: 0 28px 3px 30px;
+    right: 0;
+    top: 0;
+}
+.glass:after{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 22%;
+    background-color: #f7f7f7;
+    left: 39px;
+    top: 5px;
+    border-radius: 10px;
+    transform: rotate(6deg);
+}
+.shadow{
+    height: 40px;
+    width: 210px;
+    background-color: rgba(153,130,0,0.2);
+    position: absolute;
+    bottom: -60px;
+    right: -40px;
+    border-radius: 50%;
+    z-index: 0;
+}
